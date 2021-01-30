@@ -12,8 +12,8 @@ void solve(){
 
 int main(){
 	fast;
-	// freopen("blist.in", "r", stdin);
-	// freopen("blist.out", "w", stdout);
+	freopen("maxcross.in", "r", stdin);
+   	freopen("maxcross.out", "w", stdout);
 	int t = 1;
 	// cin >> t;
 	while(t--)
