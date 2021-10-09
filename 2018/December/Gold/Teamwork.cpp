@@ -5,29 +5,7 @@
 using namespace std;
 const int N = 1e6 + 5;
 const int MOD = 1e9 + 7;
-long long n, k, a[N], dp[10002][1002], tree[N], mx[N];
-
-void build(ll node, ll st, ll end){
-    if(st > end) return;
-    if(st == end){
-        tree[node] = a[st];
-        return;
-    }
-    ll mid = (st + end) >> 1;
-    build(node * 2, st, mid);
-    build(node * 2 + 1, mid + 1, end);
-    tree[node] = max(tree[node * 2], tree[node * 2 + 1]);
-}
-
-ll querry(ll node, ll st, ll end, ll l, ll r){
-    if(st > end || l > r || st > r || end < l) return 0;
-    if(l <= st && end <= r) return tree[node];
-    ll mid = (st + end) >> 1;
-    ll t = querry(node * 2, st, mid, l, r);
-    ll tt = querry(node * 2 + 1, mid + 1, end, l, r);
-    return max(t, tt);
-}
-
+long long n, k, a[N], dp[10002][1002], mx[N];
 
 void solve(){
     cin >> n >> k;
