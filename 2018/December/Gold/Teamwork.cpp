@@ -11,7 +11,6 @@ void solve(){
     cin >> n >> k;
     for(int i = 1; i <= n; ++i)
         cin >> a[i];
-    build(1, 1, n);
     // let dp[i][k] be the max sum in the prefix of i with k length last segment.
     for(int i = 1; i <= k; ++i){
         dp[1][i] = a[1];
