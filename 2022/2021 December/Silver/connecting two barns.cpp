@@ -1,7 +1,3 @@
-Connecting Two Barns (C++17)
-Sumit Kumar (sumitkk10)
-Submitted: Fri, Dec 17, 2021 14:35:46 EST
-Contest: USACO 2021 December Contest, Silver
 #include <bits/stdc++.h>
 #define fast ios_base::sync_with_stdio(0);cin.tie(NULL);cout.tie(NULL) 
 using namespace std;
